@@ -1,7 +1,7 @@
 /* 3 - Criação de um Hook para utilização do contexto de forma simplicada pelos componentes da aplicação */
 
 import { useContext } from "react";
-import { ThemeContext } from "../contexts/Theme";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 export const useTheme = () => {
   const { isDarkTheme, setIsDarkTheme } = useContext(ThemeContext);
@@ -19,5 +19,6 @@ export const useTheme = () => {
 
   return {
     changeTheme,
+    isDarkTheme
   };
 };

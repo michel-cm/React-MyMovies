@@ -2,7 +2,7 @@ import React from "react";
 import { AplicationRouters } from "./AplicationRouters";
 import GlobalStyle from "./styles/global";
 
-import { ThemeContextProvider } from "./contexts/Theme";
+import { ThemeContextProvider } from "./contexts/ThemeContext";
 
 function App() {
   return (

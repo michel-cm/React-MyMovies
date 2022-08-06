@@ -11,13 +11,13 @@ import { useTheme } from "../../hooks/useTheme";
 const ToggleTheme = () => {
   const { colors } = useContext(ThemeContext);
 
-  const { changeTheme } = useTheme();
+  const { changeTheme, isDarkTheme } = useTheme();
 
-
+  console.log(isDarkTheme)
   return (
     <Switch
       onChange={changeTheme}
-      checked={true}
+      checked={isDarkTheme === 'dark'}
       checkedIcon={false}
       uncheckedIcon={false}
       height={10}
